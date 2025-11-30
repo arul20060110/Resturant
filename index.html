@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Classic Restaurant</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>Delicious food made with love.</p>
+        <button onclick="scrollToMenu()">View Menu</button>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="item"><h3>Pizza</h3><p>Rs. 450</p></div>
+            <div class="item"><h3>Burger</h3><p>Rs. 250</p></div>
+            <div class="item"><h3>Pasta</h3><p>Rs. 300</p></div>
+            <div class="item"><h3>Chicken Fry</h3><p>Rs. 550</p></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We serve fresh, tasty meals made from the finest ingredients.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="text" placeholder="Phone Number" required />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Classic Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToMenu() {
+            document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
